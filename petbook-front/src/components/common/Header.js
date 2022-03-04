@@ -77,7 +77,7 @@ const UserInfoWrap = styled.div`
 `;
 
 const Header = ({ data, onLogout }) => {
-  const knowHowData = data.data;
+  const knowHowData = data;
 
   return (
     <>
@@ -90,7 +90,7 @@ const Header = ({ data, onLogout }) => {
             <UserInfoWrap>
               <span>
                 {knowHowData
-                  ? knowHowData.username + " 님, 안녕하세요 !"
+                  ? knowHowData.data.username + " 님, 안녕하세요 !"
                   : "PetBook 에 오신것을 환영합니다 !"}
               </span>
             </UserInfoWrap>
@@ -98,7 +98,7 @@ const Header = ({ data, onLogout }) => {
             <div className="vr"></div>
 
             {knowHowData ? (
-              knowHowData.username === "admin" ? (
+              knowHowData.data.username === "admin" ? (
                 <div className="userBox">
                   <div className="userImgBox">
                     <Button>프로필자리</Button>
