@@ -3,7 +3,6 @@
 **Important**
 
 - react-router-dom
-- @types/react-router-dom (Not recommended, For future migration)
 - styled-components
 - axios
 - qs
@@ -17,11 +16,7 @@
 > - react-query (Recommendation)
 
 > - @mui/material
-> - @mui/styled-engine-sc
 > - @mui/icons-material
-
-> - @types/jest
-> - jest-watch-typeahead
 
 > - react-testing-library (Not recommended)
 > - @testing-library/react
@@ -30,7 +25,6 @@
 
 > - enzyme
 > - @wojtekmaj/enzyme-adapter-react-17
-> - enzyme-to-json
 
 **DevTools**
 
@@ -61,6 +55,10 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
+
+### `yarn tsc`
+
+Execution Compile Typescript files.
 
 ### `yarn test`
 
